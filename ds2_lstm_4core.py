@@ -4,7 +4,7 @@ import torch.nn as nn
 import time
 import os
 
-option = input("5x10:1, 20x40:2, 80x160:3, 320x640:4, 1024x2048:5 \nenter layer to run: ")
+option = input("# words = 32:1, 64:2, 128:3, 256:4, 576:5 \nenter layer to run: ")
 
 print("option: ", option)
 
@@ -14,41 +14,35 @@ torch.set_num_threads(4)
 print("\n----lets run!----")
 
 m=0
-n=0
 itr=5
 
-# fc1
+# lstm
 if (option == '1'):
-    m = 5
-    n = 10
+    m = 32
 
 elif (option == '2'):
-    m = 20
-    n = 40
+    m = 64
  
 elif (option == '3'):
-    m = 80
-    n = 160
+    m = 128
  
 elif (option == '4'):
-    m = 320
-    n = 640
+    m = 256
  
 elif (option == '5'):
-    m = 1024
-    n = 2048
+    m = 576
     
-FC = nn.Linear(m, n)
+LSTM = torch.load('./weight/lstm.pt').eval()
 
-print("compute: fc layer")
+print("compute: lstm layer")
 
 avg_time = 0
 print("iter\t time")
 for i in range(itr):
-    x = torch.randn(1, m)
+    x = torch.randn(1, m, 1024)
     start = time.time() #####
     os.system('m5 dumpstats')
-    x = FC(x)
+    x = LSTM(x)
     os.system('m5 dumpstats')
     end = time.time()   #####
     print(i, "\t", end-start)
