@@ -25,14 +25,18 @@ elif (option == '3'):
     m = 576
 
 LSTM = torch.load('./weight/lstm.pt').eval()
+LSTM = LSTM.type(torch.int16)
 
 print("compute: lstm layer")
 
 avg_time = 0
 print("iter\t time")
 for i in range(itr):
-    x = torch.randn(1, m, 1024)
-    
+    #x = torch.randn(1, m, 1024)
+    x = torch.randn(1, m, 1024).type(torch.int16)
+    h0 = torch.randn(2, 64, 512).type(torch.int16)
+    c0 = torch.randn(2, 64, 512).type(torch.int16)
+
     start = time.time() #####
     os.system('m5 dumpstats')
     FC_F = torch.load('./weight/flush.pt').eval()
@@ -44,6 +48,7 @@ for i in range(itr):
 
     start = time.time() #####
     os.system('m5 dumpstats')
+    #x, (h, c) = LSTM(x, (h0, c0))
     x = LSTM(x)
     os.system('m5 dumpstats')
     end = time.time()   #####
