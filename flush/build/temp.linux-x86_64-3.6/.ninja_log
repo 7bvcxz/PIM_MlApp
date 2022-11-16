@@ -1,0 +1,16 @@
+# ninja log v5
+0	17540	1668520360	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	17401	1668521037	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+2	17181	1668521192	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	17384	1668521526	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+2	287	1668521672	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/mm_flush.o	2d17639d88217880
+2	17593	1668521689	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	17568	1668521947	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+2	17441	1668522182	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+2	21158	1668522422	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	21294	1668523194	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	591	1668559395	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/mm_flush.o	2d17639d88217880
+2	20526	1668559415	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	20774	1668559540	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
+3	543	1668559621	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/mm_flush.o	2d17639d88217880
+3	20835	1668559642	/home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o	2124a58141006a5d
