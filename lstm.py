@@ -6,9 +6,9 @@ import os
 import flush_cpp as fl
 
 LSTM = torch.load('./weight/lstm.pt').eval()
-x = torch.randn(1, m, 1024)
-h0 = torch.randn(2, m, 512)
-c0 = torch.randn(2, m, 512)
+x = torch.randn(1, 1, 1024)
+h0 = torch.randn(2, 1, 512)
+c0 = torch.randn(2, 1, 512)
 
 os.system('m5 checkpoint')
 os.system('echo CPU Switched!')
