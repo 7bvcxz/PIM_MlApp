@@ -4,8 +4,7 @@ from torch.utils.cpp_extension import CppExtension, BuildExtension
 flush_utils = CppExtension(
     name="flush_cpp",
     sources=[
-        "flush.cpp",
-        "mm_flush.cpp"
+        "flush.cpp"
     ]
 )
 

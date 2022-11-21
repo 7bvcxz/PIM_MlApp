@@ -33,7 +33,7 @@ for i in range(itr):
     x = torch.randn(1, m)
   
     #push_flush()
-    #mm_flush()
+    mm_flush()
 
     start = time.time() #####
     x = FC(x)

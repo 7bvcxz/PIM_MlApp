@@ -9,6 +9,7 @@ namespace py = pybind11;
 
 void flush(torch::Tensor T, size_t size) {
 	uint8_t *data = (uint8_t*)T.data_ptr();
+	std::cout << "ptr_addr : " << (uint64_t)data << std::endl;
 	for (int i=0; i<size; i+=32)
 		_mm_clflush(&data[i]);
 }

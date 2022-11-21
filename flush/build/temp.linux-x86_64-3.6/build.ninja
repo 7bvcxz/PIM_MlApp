@@ -13,7 +13,6 @@ rule compile
 
 
 build /home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/flush.o: compile /home/kkm0411/PIM_MlApp/flush/flush.cpp
-build /home/kkm0411/PIM_MlApp/flush/build/temp.linux-x86_64-3.6/mm_flush.o: compile /home/kkm0411/PIM_MlApp/flush/mm_flush.cpp
 
 
 
