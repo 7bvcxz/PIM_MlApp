@@ -37,6 +37,6 @@ os.system('m5 resetstats')
 
 x, (h, c) = LSTM(x, (h0, c0))
 
-os.system('m6 dumpstats')
+os.system('m5 dumpstats')
 end = time.time()   #####
 print("time: ", end-start)
